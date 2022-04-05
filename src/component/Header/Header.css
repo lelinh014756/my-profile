@@ -1,0 +1,15 @@
+#header .nav-item {
+    @apply flex sm:flex-col gap-[2.4rem] sm:gap-0 border-y-[0.1rem] sm:border-y-0 border-[#c4bdb1];
+}
+
+#header .nav-item li {
+    @apply font-sans text-[1.3rem] text-center uppercase tracking-[.08em] font-[500] leading-[4.5rem] hover:text-[#c4c4c4] cursor-pointer
+}
+
+#header .navbar {
+    @apply sm:transform sm:translate-x-full sm:opacity-0;
+}
+
+#header #toggle-nav-mobile:checked ~ .navbar {
+    @apply sm:transform sm:translate-x-0 sm:opacity-100
+}

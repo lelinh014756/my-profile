@@ -1,0 +1,36 @@
+#content .heading {
+  @apply text-center text-[2.2rem] md:text-[2rem] sm:text-[1.6rem] text-[#222222] font-[Roboto,serif] mt-[4rem] sm:mt-[3rem] tracking-widest uppercase font-[500];
+}
+
+.contact-btn {
+  backface-visibility: hidden;
+}
+.contact-btn span {
+  backface-visibility: hidden;
+}
+.contact-btn::before {
+  @apply content-['Tải_hồ_sơ'] h-full w-full absolute left-0 top-[-100%] transition-all duration-[0.25s] ease-in flex justify-center items-center;
+}
+
+#my-products {
+  & li {
+    & div img {
+      @apply w-full h-full object-cover border-[0.1rem] rounded-[0.8rem] border-solid border-[#ccc];
+    }
+    & .wrapper-content {
+      @apply flex flex-col justify-center rounded-[0.8rem] sm:rounded-none gap-y-[3rem] bg-[#ecebe7] sm:py-[2rem] sm:bg-transparent sm:border-b-[0.1rem] sm:border-solid sm:border-[#cecdc9] px-[4rem];
+      & h2 {
+        @apply text-[2.5rem] md:text-[2rem] text-[#171717cc] font-[Roboto,serif] font-[500];
+      }
+      & p {
+        @apply text-[1.6rem] leading-[1.6] md:leading-[1.5] text-[#171717cc] font-sans;
+      }
+      & a {
+        @apply text-center;
+        & button {
+          @apply py-[1rem] px-[1.8rem] text-[1.4rem]
+        }
+      } 
+    }
+  }
+}

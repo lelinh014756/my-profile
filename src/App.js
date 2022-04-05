@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Header from "./component/Header/Header";
+import Content from "./component/Content/Content";
+import Footer from "./component/Footer/Footer";
+import GoToTop from "./common/GoToTop/GoToTop";
 
 function App() {
+
+  const [goToTop, setGoToTop] = useState(false);
+
+  window.addEventListener('scroll' ,() => {
+    const scrolled = window.scrollY;
+    if(scrolled >= 200) {
+      setGoToTop(true)
+    } else {
+      setGoToTop(false);
+    }
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header />
+      <Content />
+      <Footer />
+      {goToTop && <GoToTop />}
+    </React.Fragment>
   );
 }
 
