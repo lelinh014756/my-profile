@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.bdca11e8.css",
-    "main.js": "./static/js/main.6026f0f8.js",
-    "static/media/anhdaidien.jpg": "./static/media/anhdaidien.1fdd2afeaa3094b34976.jpg",
-    "static/media/redux-logo.png": "./static/media/redux-logo.a6a299c64d2b9dddf48f.png",
-    "static/media/bootstrap-logo.png": "./static/media/bootstrap-logo.3c4e1a5d3a149087b144.png",
-    "static/media/react-logo.png": "./static/media/react-logo.e775a0479aa501dc90ba.png",
-    "static/media/github-logo.png": "./static/media/github-logo.5994b25b696bbc93b5d8.png",
-    "static/media/css-logo.png": "./static/media/css-logo.86ec4375136a660ad630.png",
-    "static/media/sass-logo.png": "./static/media/sass-logo.6188fd7abf1f84268de0.png",
-    "static/media/talwincss-logo.png": "./static/media/talwincss-logo.00a6332ee179940797e8.png",
-    "index.html": "./index.html",
-    "main.bdca11e8.css.map": "./static/css/main.bdca11e8.css.map",
-    "main.6026f0f8.js.map": "./static/js/main.6026f0f8.js.map"
+    "main.css": "/my-profile/static/css/main.f8e0f82d.css",
+    "main.js": "/my-profile/static/js/main.65b3f915.js",
+    "static/media/DIPmientrung-project-admin.jpg": "/my-profile/static/media/DIPmientrung-project-admin.a2176a1a22607d3763b8.jpg",
+    "static/media/anhdaidien.jpg": "/my-profile/static/media/anhdaidien.1fdd2afeaa3094b34976.jpg",
+    "static/media/redux-logo.png": "/my-profile/static/media/redux-logo.a6a299c64d2b9dddf48f.png",
+    "static/media/chailoAnTam-project.jpg": "/my-profile/static/media/chailoAnTam-project.0ee60900e589f331e79b.jpg",
+    "static/media/bootstrap-logo.png": "/my-profile/static/media/bootstrap-logo.3c4e1a5d3a149087b144.png",
+    "static/media/react-logo.png": "/my-profile/static/media/react-logo.e775a0479aa501dc90ba.png",
+    "static/media/github-logo.png": "/my-profile/static/media/github-logo.5994b25b696bbc93b5d8.png",
+    "static/media/css-logo.png": "/my-profile/static/media/css-logo.86ec4375136a660ad630.png",
+    "static/media/sass-logo.png": "/my-profile/static/media/sass-logo.6188fd7abf1f84268de0.png",
+    "static/media/talwincss-logo.png": "/my-profile/static/media/talwincss-logo.00a6332ee179940797e8.png",
+    "index.html": "/my-profile/index.html",
+    "main.f8e0f82d.css.map": "/my-profile/static/css/main.f8e0f82d.css.map",
+    "main.65b3f915.js.map": "/my-profile/static/js/main.65b3f915.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdca11e8.css",
-    "static/js/main.6026f0f8.js"
+    "static/css/main.f8e0f82d.css",
+    "static/js/main.65b3f915.js"
   ]
 }
