@@ -1,0 +1,94 @@
+@import url("https:use.typekit.net/arg3dpy.css");
+@import url("https:fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap");
+
+
+:root {
+	--facebook-color: #3b5999;
+	--zalo-color: #46c1f6;
+	--github-color: #333;
+}
+
+html {
+  font-family: "adobe-garamond-pro";
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+.grid-wrapper {
+  @apply md:px-[2rem] sm:px-[1.7rem] max-w-[127rem] md:max-w-[unset] sm:max-w-[unset] w-full mx-auto !important;
+}
+
+
+
+/* Scroll style */
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #c4bdb12b;
+}
+ 
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-[5rem] border-[0.3rem] border-solid border-[#f5f4f2];
+}
+
+
+
+
+/* Button hover effect slide right */
+.btn-effect-slide-right {
+  @apply relative isolate text-primary text-[1.6rem] font-sans font-medium py-[1.2rem] px-[3rem] rounded-[0.4rem] bg-transparent border-[0.1rem] border-solid border-primary;
+}
+
+.btn-effect-slide-right::before {
+  @apply bg-primary content-[''] h-full w-0 absolute top-0 left-0 z-[-1] transition-[width] duration-[0.25s] ease-in;
+}
+@screen ss {
+  .btn-effect-slide-right:hover {
+    @apply text-white;
+  }
+  .btn-effect-slide-right:hover::before {
+    @apply w-full;
+  }
+}
+
+@screen sm {
+  .btn-effect-slide-right:active {
+    @apply text-white;
+  }
+  .btn-effect-slide-right:active::before {
+    @apply w-full;
+  }
+}
+ /* .btn-effect-slide-right {
+   @apply relative isolate text-primary text-[1.6rem] font-sans font-medium py-[1.2rem] px-[3rem] rounded-[0.4rem] bg-transparent border-[0.1rem] border-solid border-primary;
+   &::before {
+     @apply bg-primary content-[''] h-full w-0 absolute top-0 left-0 z-[-1] transition-[width] duration-[0.25s] ease-in;
+   }
+   &:hover {
+       @apply text-white;
+   }
+   &:hover::before {
+     @apply w-full;
+   }
+ } */
+
+
+/* Text Truncate */
+.text-truncate {
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.text-truncate.line1 {
+  -webkit-line-clamp:1;
+}
+
+.text-truncate.line2 {
+  -webkit-line-clamp:2;
+}

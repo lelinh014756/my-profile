@@ -1,0 +1,110 @@
+/* #footer {
+  & .icon {
+    @apply mx-[2rem] cursor-pointer relative;
+    & i {
+      @apply duration-[0.3s] w-[6rem] h-[6rem] rounded-[50%] bg-white shadow-[0px_0px_10px_rgba(0,0,0,0.2)] text-[2.5rem] flex justify-center items-center;
+    }
+    & svg {
+      @apply w-[2.5rem] h-[2.5rem];
+    }
+    & .tooltip {
+      @apply absolute top-0 left-[50%] translate-x-[-50%] text-white py-[1rem] px-[1.8rem] text-[2rem] font-medium rounded-[2.5rem] opacity-0 pointer-events-none shadow-[0px_10px_10px_rgba(0,0,0,0.2)] duration-[0.3s];
+      &::before {
+        @apply absolute content-[''] w-[1.5rem] h-[1.5rem] left-[50%] bottom-[-0.6rem] translate-x-[-50%] rotate-45;
+      }
+    }
+    &:hover .tooltip {
+      @apply opacity-[1] pointer-events-auto top-[-7rem];
+    }
+    &:hover i {
+      @apply text-white;
+    }
+  }
+
+  .facebook .tooltip:before,
+  .facebook:hover i,
+  .facebook .tooltip {
+    background: var(--facebook-color);
+  }
+  .github .tooltip:before,
+  .github:hover i,
+  .github .tooltip {
+    background: var(--github-color);
+  }
+  .zalo .tooltip:before,
+  .zalo:hover i,
+  .zalo .tooltip {
+    background: var(--zalo-color);
+  }
+} */
+
+#footer .icon {
+  @apply mx-[2rem] cursor-pointer relative;
+}
+
+#footer .icon i {
+  @apply duration-[0.3s] w-[6rem] h-[6rem] rounded-[50%] bg-white shadow-[0px_0px_10px_rgba(0,0,0,0.2)] text-[2.5rem] flex justify-center items-center;
+}
+
+#footer .icon svg {
+  @apply w-[2.5rem] h-[2.5rem];
+}
+
+#footer .icon .tooltip {
+  @apply absolute top-0 left-[50%] translate-x-[-50%] text-white py-[1rem] px-[1.8rem] text-[2rem] font-medium rounded-[2.5rem] opacity-0 pointer-events-none shadow-[0px_10px_10px_rgba(0,0,0,0.2)] duration-[0.3s];
+}
+
+#footer .icon .tooltip::before {
+  @apply absolute content-[''] w-[1.5rem] h-[1.5rem] left-[50%] bottom-[-0.6rem] translate-x-[-50%] rotate-45;
+}
+
+#footer .facebook .tooltip:before,
+#footer .facebook .tooltip {
+  background: var(--facebook-color);
+}
+#footer .github .tooltip:before,
+#footer .github .tooltip {
+  background: var(--github-color);
+}
+#footer .zalo .tooltip:before,
+#footer .zalo .tooltip {
+  background: var(--zalo-color);
+}
+
+@screen ss {
+  #footer .icon:hover .tooltip {
+    @apply opacity-[1] pointer-events-auto top-[-7rem];
+  }
+  #footer .icon:hover i {
+    @apply text-white;
+  }
+
+  #footer .facebook:hover i {
+    background: var(--facebook-color);
+  }
+  #footer .github:hover i {
+    background: var(--github-color);
+  }
+  #footer .zalo:hover i {
+    background: var(--zalo-color);
+  }
+}
+
+@screen sm {
+  #footer .icon:active .tooltip {
+    @apply opacity-[1] pointer-events-auto top-[-7rem];
+  }
+  #footer .icon:active i {
+    @apply text-white;
+  }
+
+  #footer .facebook:active i {
+    background: var(--facebook-color);
+  }
+  #footer .github:active i {
+    background: var(--github-color);
+  }
+  #footer .zalo:active i {
+    background: var(--zalo-color);
+  }
+}

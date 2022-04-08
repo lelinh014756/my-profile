@@ -4,7 +4,7 @@ import skill from "../../data/skill";
 import products from "../../data/products";
 import ReactTooltip from "react-tooltip";
 
-import "./Content.scss";
+import "./Content.css";
 
 const Content = () => {
   return (
@@ -25,9 +25,9 @@ const Content = () => {
               thân. Với những kỹ năng đang có, tôi muốn tạo ra những trang
               website đẹp, chất lượng tốt, đáp ứng nhu cầu và mang lại trãi
               nghiệm tốt cho khách hàng. Đó là kết quả mà tôi mong muốn. ”{" "}
-              <br /> <br className="sm:hidden" />“ Được may mắn có trách nhiệm, kiên trì và tinh thần
-              học hỏi cái mới. Tôi muốn cố gắng làm việc hết mình, để mang lại
-              nhiều giá trị cho nơi mà tôi làm việc. ”
+              <br /> <br className="sm:hidden" />“ Được may mắn có trách nhiệm,
+              kiên trì và tinh thần học hỏi cái mới. Tôi muốn cố gắng làm việc
+              hết mình, để mang lại nhiều giá trị cho nơi mà tôi làm việc. ”
             </p>
             <h5 className="mt-[2rem] sm:mt-[1.6rem] text-[1.5rem] sm:text-[1.3rem] text-[#4b4b4b] font-[Roboto,serif] tracking-widest uppercase font-[600]">
               — Lê Hồng Lĩnh, 02 - 04 -2022.
@@ -41,7 +41,10 @@ const Content = () => {
             />
           </div>
         </div>
-        <div id="my-skill" className="w-full h-[100vh] bg-[#ecebe7] py-[4rem] sm:pt-[0.1rem] rounded-[0.8rem]">
+        <div
+          id="my-skill"
+          className="w-full min-h-[100vh] bg-[#ecebe7] py-[4rem] sm:pt-[0.1rem] rounded-[0.8rem]"
+        >
           <h2 className="heading mb-[6rem] sm:mb-[3rem]">– Kỹ năng của tôi</h2>
           <ul className="grid grid-cols-3 gap-y-[6rem] sm:gap-y-[4rem]">
             {skill.map((skill, index) => (
@@ -53,14 +56,17 @@ const Content = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h2 className="text-[2rem] sm:text-[1.6rem] text-[#171717cc] leading-[2.6]">
+                <h2 className="text-[2rem] sm:text-[1.6rem] text-[#171717cc] mt-[1rem] leading-[1.6] text-center">
                   {skill.name}
                 </h2>
               </li>
             ))}
           </ul>
         </div>
-        <div id="my-products" className="w-full h-[100vh] sm:h-[unset] pt-[4rem] sm:pt-[0.1rem]">
+        <div
+          id="my-products"
+          className="w-full min-h-[100vh] sm:h-[unset] pt-[4rem] sm:pt-[0.1rem]"
+        >
           <h2 className="heading mb-[6rem] sm:mb-[3rem]">– Sản phẩm của tôi</h2>
           <ul className="grid gap-y-[3.4rem] mb-[8rem]">
             {products.map((product, index) => {
@@ -71,21 +77,20 @@ const Content = () => {
                     className="grid sm:block grid-cols-[4fr,6fr] h-[35rem] md:h-[32rem] sm:h-[unset] gap-x-[3.4rem]"
                   >
                     <div className="h-full sm:h-[30rem]">
-                      <img
-                        src={product.img}
-                        alt=""
-                      />
+                      <img src={product.img} alt="" />
                     </div>
                     <div className="wrapper-content">
-                    <h2 className="text-truncate line1" data-tip data-for={product.name + index}>
+                      <h2
+                        className="ss:text-truncate ss:line1 text-[2.5rem] md:text-[2rem] text-[#171717cc] font-[Roboto,serif] font-[500]"
+                        data-tip
+                        data-for={product.name + index}
+                      >
                         {product.name}
                         <ReactTooltip id={product.name + index}>
                           <span>{product.name}</span>
                         </ReactTooltip>
                       </h2>
-                      <p >
-                        {product.desc}
-                      </p>
+                      <p className="text-[1.6rem] leading-[1.6] md:leading-[1.5] text-[#171717cc] font-sans">{product.desc}</p>
                       <a href={product.link} target="_blank">
                         <button className="btn-effect-slide-right">
                           Xem sản phẩm
@@ -101,15 +106,17 @@ const Content = () => {
                     className="grid sm:flex sm:flex-col-reverse grid-cols-[6fr,4fr] sm:grid-cols-1 h-[35rem] sm:h-[unset] gap-x-[3.4rem]"
                   >
                     <div className="wrapper-content">
-                      <h2 className="text-truncate line1" data-tip data-for={product.name + index}>
+                      <h2
+                        className="ss:text-truncate ss:line1 text-[2.5rem] md:text-[2rem] text-[#171717cc] font-[Roboto,serif] font-[500]"
+                        data-tip
+                        data-for={product.name + index}
+                      >
                         {product.name}
                         <ReactTooltip id={product.name + index}>
                           <span>{product.name}</span>
                         </ReactTooltip>
                       </h2>
-                      <p >
-                        {product.desc}
-                      </p>
+                      <p className="text-[1.6rem] leading-[1.6] md:leading-[1.5] text-[#171717cc] font-sans">{product.desc}</p>
                       <a href={product.link} target="_blank">
                         <button className="btn-effect-slide-right">
                           Xem sản phẩm
@@ -124,16 +131,19 @@ const Content = () => {
                       />
                     </div>
                   </li>
-                )
+                );
               }
             })}
           </ul>
         </div>
       </div>
       <div className="w-full h-[20rem] bg-primary flex justify-center items-center">
-        <a href="https://drive.google.com/file/d/17bja7gBnPgLVTNZ-41KdzY3L83Mk4roI/view" target="_blank">
-          <button className="contact-btn bg-white text-primary text-[2rem] tracking-[0.2rem] py-[1.4rem] px-[4.6rem] font-[Roboto,serif] rounded-[0.4rem] font-[500] relative isolate overflow-hidden hover:before:top-0 group">
-            <span className="inline-block w-full h-full transition-all duration-[0.2s] ease-linear group-hover:translate-y-[300%]">
+        <a
+          href="https://drive.google.com/file/d/1dQGljI0Sg_120NywOSkKjj0w8CPKtB91/view?usp=sharing"
+          target="_blank"
+        >
+          <button className="contact-btn bg-white text-primary text-[2rem] tracking-[0.2rem] py-[1.4rem] px-[4.6rem] font-[Roboto,serif] rounded-[0.4rem] font-[500] relative isolate overflow-hidden hover:before:top-0 sm:active:before:top-0 group">
+            <span className="inline-block w-full h-full transition-all duration-[0.2s] ease-linear group-hover:translate-y-[300%] sm:group-active:translate-y-[300%]">
               Hồ sơ
             </span>
           </button>

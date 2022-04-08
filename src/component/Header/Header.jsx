@@ -62,7 +62,7 @@ const Header = () => {
             <ul className="nav-item">
               <li>
                 <a
-                  href="https://drive.google.com/file/d/17bja7gBnPgLVTNZ-41KdzY3L83Mk4roI/view"
+                  href="https://drive.google.com/file/d/1dQGljI0Sg_120NywOSkKjj0w8CPKtB91/view?usp=sharing"
                   target="_blank"
                 >
                   Hồ sơ
