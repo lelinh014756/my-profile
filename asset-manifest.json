@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.f8e0f82d.css",
-    "main.js": "/my-profile/static/js/main.7452420c.js",
+    "main.css": "/my-profile/static/css/main.6f194725.css",
+    "main.js": "/my-profile/static/js/main.20bc802c.js",
     "static/media/DIPmientrung-project-admin.jpg": "/my-profile/static/media/DIPmientrung-project-admin.a2176a1a22607d3763b8.jpg",
     "static/media/anhdaidien.jpg": "/my-profile/static/media/anhdaidien.1fdd2afeaa3094b34976.jpg",
     "static/media/redux-logo.png": "/my-profile/static/media/redux-logo.a6a299c64d2b9dddf48f.png",
@@ -13,11 +13,11 @@
     "static/media/sass-logo.png": "/my-profile/static/media/sass-logo.6188fd7abf1f84268de0.png",
     "static/media/talwincss-logo.png": "/my-profile/static/media/talwincss-logo.00a6332ee179940797e8.png",
     "index.html": "/my-profile/index.html",
-    "main.f8e0f82d.css.map": "/my-profile/static/css/main.f8e0f82d.css.map",
-    "main.7452420c.js.map": "/my-profile/static/js/main.7452420c.js.map"
+    "main.6f194725.css.map": "/my-profile/static/css/main.6f194725.css.map",
+    "main.20bc802c.js.map": "/my-profile/static/js/main.20bc802c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8e0f82d.css",
-    "static/js/main.7452420c.js"
+    "static/css/main.6f194725.css",
+    "static/js/main.20bc802c.js"
   ]
 }
